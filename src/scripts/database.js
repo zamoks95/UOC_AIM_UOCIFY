@@ -1,7 +1,7 @@
 export const artists = [
     {
         name: "empty",
-        image: "empty.jpg"
+        image: "empty.jpg",
     },
     {
         name: "beatles-fan-club",

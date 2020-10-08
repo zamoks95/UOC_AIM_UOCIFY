@@ -4,11 +4,13 @@
     overflow: hidden;
     padding: $spacing;
     flex-direction: column;
-    transition: box-shadow 125ms ease-in-out;
+    transition: all 250ms ease-in-out;
 
     &__artist {
         text-align: center;
         .item__media {
+            
+            border-radius: 100%;
             &__image {
                 border-radius: 100%;
             }
@@ -16,22 +18,33 @@
     }
 
     .item__media {
+        overflow: hidden;
         &__image {
             width: 100%;
             max-width: 210px;
+            overflow: hidden;
             border: 1px solid $grey;
+            transition: all 250ms ease-in-out;
         }
     }
     .item-description {
         margin-top: $spacing;
         &__header {
             font-weight: $bold;
+            position: relative;
         }
         &__text {
             margin-top: $spacing/2;
         }
     }
     &:hover{
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+        box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+        .item__media {
+            &__image {
+                transform: scale(1.25)
+            }
+        }
+
+        
     }
 }

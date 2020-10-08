@@ -26,6 +26,7 @@
   </head>
 
   <body>
+    <!-- Header - Start -->
     <header class="header">
       <a class="header__go-home" href="/" title="Ir al Incio">
         <img
@@ -37,47 +38,134 @@
       <form class="search-form">
         <div class="input-wrapper">
           <i class="input-wrapper__icon fas fa-search"></i>
-          <input class="input-wrapper__field" type="text" value="the beatles" placeholder="buscar..." />
+          <input
+            class="input-wrapper__field"
+            type="text"
+            value="the beatles"
+            placeholder="buscar..."
+          />
         </div>
       </form>
       <div class="user">
-        <div class="user__name">
-          Sergi
-        </div>
+        <div class="user__name">Sergi</div>
         <a class="user__avatar">
           <i class="fas fa-user"></i>
         </a>
       </div>
     </header>
+    <!-- Header - End -->
 
-    <div class="media-item">
-      <div class="item__media">
-        <img
-          class="item__media__image"
-          src="assets/artists/the-beatles-acoustic-trio.jpg"
-          alt="the-beatles-acoustic-trio"
-        />
-      </div>
-      <div class="item-description">
-        <div class="item-description__header">Let It Be (Remastered)</div>
-        <div class="item-description__text">The Beatles</div>
-      </div>
-    </div>
-
-    <div class="media-item media-item__artist">
-      <div class="item__media">
-        <img
-          class="item__media__image"
-          src="assets/artists/the-beatles-acoustic-trio.jpg"
-          alt="the-beatles-acoustic-trio"
-        />
-      </div>
-      <div class="item-description">
-        <div class="item-description__header">Let It Be (Remastered)</div>
-        <div class="item-description__text">The Beatles</div>
-      </div>
-    </div>
-
+    <!-- Main - Start -->
+    <main class="main">
+      <h1 class="main__title">
+        Resultados de <span class="main__title__highlight">the beatles</span>
+      </h1>
+      <section class="search-result">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="all-tab"
+              data-toggle="tab"
+              href="#all"
+              role="tab"
+              aria-controls="all"
+              aria-selected="true"
+              >Todo</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="songs-tab"
+              data-toggle="tab"
+              href="#songs"
+              role="tab"
+              aria-controls="songs"
+              aria-selected="false"
+              >Canciones</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="albums-tab"
+              data-toggle="tab"
+              href="#albums"
+              role="tab"
+              aria-controls="albums"
+              aria-selected="false"
+              >Álbumes</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              id="artists-tab"
+              data-toggle="tab"
+              href="#artists"
+              role="tab"
+              aria-controls="artists"
+              aria-selected="false"
+              >Artistas</a
+            >
+          </li>
+        </ul>
+        <!-- Tab Pane All - Start -->
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade"
+            id="all"
+            role="tabpanel"
+            aria-labelledby="all-tab"
+          >
+            all
+          </div>
+          <!-- Tab Pane All - End -->
+          <!-- Tab Pane Songs - Start -->
+          <div
+            class="tab-pane fade"
+            id="songs"
+            role="tabpanel"
+            aria-labelledby="songs-tab"
+          >
+            songs
+          </div>
+          <!-- Tab Pane Songs - End -->
+          <!-- Tab Pane Albums - Start -->
+          <div
+            class="tab-pane fade"
+            id="albums"
+            role="tabpanel"
+            aria-labelledby="albums-tab"
+          >
+            <header class="tab-pane__header">
+              <h2>286 álbumes</h2>
+            </header>
+            <div class="tab-pane__content">
+             <!-- ALBUMS ITEMS ARE INSERTED HERE USING JQUERY -->
+            </div>
+          </div>
+          <!-- Tab Pane Albums - End -->
+          <!-- Tab Pane Artists - Start -->
+          <div
+            class="tab-pane fade show active"
+            id="artists"
+            role="tabpanel"
+            aria-labelledby="artists-tab"
+          >
+            <header class="tab-pane__header">
+              <h2>72 artistas</h2>
+            </header>
+            <div class="tab-pane__content">
+              <!-- ARTISTS ITEMS ARE INSERTED HERE USING JQUERY -->
+            </div>
+          </div>
+          <!-- Tab Pane Artists - End -->
+        </div>
+      </section>
+    </main>
+    <!-- Main - End -->
     <script src="index.js"></script>
   </body>
 </html>
