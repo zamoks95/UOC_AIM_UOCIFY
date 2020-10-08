@@ -1,25 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-		<!-- Website Basics -->
+    <!-- Website Basics -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Esto es la descripción de Uocify" />
+    <meta
+      name="author"
+      content="Sergi Zamora Montesinos <sergi.zamora.95@gmail.com>"
+    />
     <title>UOCIFY</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <!-- SCSS file will be replaced with bundled css -->
-		<link href="sass/main.scss" rel="stylesheet" />
-		<!-- Load FontAwesome 5.10.0 -->
-		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="sass/main.scss" rel="stylesheet" />
+    <!-- Load FontAwesome 5.10.0 -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
+    <header class="header">
+      <a class="header__go-home" href="/" title="Ir al Incio">
+        <img
+          class="header__go-home__image"
+          src="assets/uocify_logo.svg"
+          alt="the-beatles-acoustic-trio"
+        />
+      </a>
+      <form class="search-form">
+        <div class="input-wrapper">
+          <i class="input-wrapper__icon fas fa-search"></i>
+          <input class="input-wrapper__field" type="text" value="the beatles" placeholder="buscar..." />
+        </div>
+      </form>
+      <div class="user">
+        <div class="user__name">
+          Sergi
+        </div>
+        <a class="user__avatar">
+          <i class="fas fa-user"></i>
+        </a>
+      </div>
+    </header>
 
-    <main id="main" class="container">
-      MAIN <img src="assets/artists/the-beatles-acoustic-trio.jpg" /><i class="fas fa-users"></i>
-    </main>
+    <div class="media-item">
+      <div class="item__media">
+        <img
+          class="item__media__image"
+          src="assets/artists/the-beatles-acoustic-trio.jpg"
+          alt="the-beatles-acoustic-trio"
+        />
+      </div>
+      <div class="item-description">
+        <div class="item-description__header">Let It Be (Remastered)</div>
+        <div class="item-description__text">The Beatles</div>
+      </div>
+    </div>
+
+    <div class="media-item media-item__artist">
+      <div class="item__media">
+        <img
+          class="item__media__image"
+          src="assets/artists/the-beatles-acoustic-trio.jpg"
+          alt="the-beatles-acoustic-trio"
+        />
+      </div>
+      <div class="item-description">
+        <div class="item-description__header">Let It Be (Remastered)</div>
+        <div class="item-description__text">The Beatles</div>
+      </div>
+    </div>
 
     <script src="index.js"></script>
   </body>

@@ -1,0 +1,27 @@
+.user {
+    display: flex;
+    &__name {
+        color: $black;
+        font-weight: $bold;
+        display: flex;
+        align-items: center;
+        padding-right: $spacer;
+    }
+    &__avatar {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: $primary;
+        color: $secondary;
+        font-size: 20px;
+        filter: grayscale(100%);
+        transition: filter ease-in-out 75ms;
+        &:hover {
+            filter: grayscale(0%);
+        }
+    }
+}

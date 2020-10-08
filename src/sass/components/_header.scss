@@ -1,0 +1,19 @@
+.header{
+    background: $white;
+    padding: $spacer $spacer;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 7px 1px;
+    margin-bottom: $spacer;
+    display: flex;
+    align-items: center;
+    &__go-home{        
+        &__image{
+            height: 50px;
+        }
+    }
+    .user{
+        margin-left: auto;
+    }
+    .search-form{
+        margin-left: $spacer;
+    }
+}
