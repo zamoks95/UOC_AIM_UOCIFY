@@ -28,24 +28,32 @@
   <body>
     <!-- Header - Start -->
     <header class="header">
+      <!-- Go Home & Logo - Start -->
       <a class="header__go-home" href="/" title="Ir al Incio">
         <img
           class="header__go-home__image"
           src="assets/uocify_logo.svg"
-          alt="the-beatles-acoustic-trio"
+          alt="Uocify Logo"
         />
       </a>
-      <form class="search-form">
-        <div class="input-wrapper">
-          <i class="input-wrapper__icon fas fa-search"></i>
+      <!-- Go Home & Logo - End -->
+      <!-- Search Form - Start -->
+      <form class="search-form" action="/getDataController.php" method="get">
+        <fieldset class="input-wrapper">
+          <label for="Search">
+            <i class="input-wrapper__icon fas fa-search"></i>
+          </label>
           <input
+            name="Search"
+            id="Search"
             class="input-wrapper__field"
             type="text"
             value="the beatles"
             placeholder="buscar..."
           />
-        </div>
+        </fieldset>
       </form>
+      <!-- Search End - Start -->
       <div class="user">
         <div class="user__name">Sergi</div>
         <a class="user__avatar">

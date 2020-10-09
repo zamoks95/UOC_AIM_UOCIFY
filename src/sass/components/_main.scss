@@ -1,6 +1,6 @@
 .main {
     max-width: 1500px;
-    width: 100%;
+    width: calc(100% - 30px);
     margin: $spacer * 2 auto;
     &__title{
         &__highlight {
