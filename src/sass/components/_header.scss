@@ -16,4 +16,12 @@
     .search-form{
         margin-left: $spacer;
     }
+    @media (max-width: $screen-xs-max) {
+        flex-wrap: wrap;
+        .search-form{
+            order: 3;
+            width: 100%;
+            margin: $spacer auto 0px auto;
+        }
+    }
 }
