@@ -64,7 +64,7 @@
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item">
             <a
-              class="nav-link"
+              class="nav-link active"
               id="all-tab"
               data-toggle="tab"
               href="#all"
@@ -100,7 +100,7 @@
           </li>
           <li class="nav-item">
             <a
-              class="nav-link active"
+              class="nav-link"
               id="artists-tab"
               data-toggle="tab"
               href="#artists"
@@ -114,12 +114,31 @@
         <!-- Tab Pane All - Start -->
         <div class="tab-content" id="myTabContent">
           <div
-            class="tab-pane fade"
+            class="tab-pane fade show active"
             id="all"
             role="tabpanel"
             aria-labelledby="all-tab"
           >
-            all
+            <header class="tab-pane__header">
+              <h3>Canciones <i class="fas fa-chevron-right"></i></h2>
+            </header>
+            <table class="table">
+              <tbody class="table-body table-body-songs">
+                <!-- SONGS ITEMS ARE INSERTED HERE USING JQUERY -->
+              </tbody>
+            </table>
+            <header class="tab-pane__header">
+              <h3>Álbumes <i class="fas fa-chevron-right"></i></h2>
+            </header>
+            <div class="tab-pane__content tab-pane__content-albums">
+              <!-- ALBUMS ITEMS ARE INSERTED HERE USING JQUERY -->
+            </div>
+            <header class="tab-pane__header">
+              <h3>Artistas <i class="fas fa-chevron-right"></i></h2>
+            </header>
+            <div class="tab-pane__content  tab-pane__content-artists">
+              <!-- ARTISTS ITEMS ARE INSERTED HERE USING JQUERY -->
+            </div>
           </div>
           <!-- Tab Pane All - End -->
           <!-- Tab Pane Songs - Start -->
@@ -129,7 +148,23 @@
             role="tabpanel"
             aria-labelledby="songs-tab"
           >
-            songs
+            <header class="tab-pane__header">
+              <h2>295 canciones</h2>
+            </header>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">&nbsp;</th>
+                  <th scope="col">CANCIÓN</th>
+                  <th scope="col">ARTISTA</th>
+                  <th scope="col">ÁLBUM</th>
+                  <th scope="col" class="duration-cell">D.</th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+                <!-- SONGS ITEMS ARE INSERTED HERE USING JQUERY -->
+              </tbody>
+            </table>
           </div>
           <!-- Tab Pane Songs - End -->
           <!-- Tab Pane Albums - Start -->
@@ -143,13 +178,13 @@
               <h2>286 álbumes</h2>
             </header>
             <div class="tab-pane__content">
-             <!-- ALBUMS ITEMS ARE INSERTED HERE USING JQUERY -->
+              <!-- ALBUMS ITEMS ARE INSERTED HERE USING JQUERY -->
             </div>
           </div>
           <!-- Tab Pane Albums - End -->
           <!-- Tab Pane Artists - Start -->
           <div
-            class="tab-pane fade show active"
+            class="tab-pane fade"
             id="artists"
             role="tabpanel"
             aria-labelledby="artists-tab"

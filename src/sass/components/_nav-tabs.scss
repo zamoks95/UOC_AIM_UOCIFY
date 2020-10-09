@@ -1,0 +1,17 @@
+.nav-tabs {
+    border: none;
+    box-shadow: 0 8px 5px -5px rgba(0, 0, 0, 0.05);
+    margin-top: -$spacer;
+    .nav-item {
+        border: none;
+        .nav-link {
+            padding-bottom: $spacer;
+            color: $blackgrey;
+            border: none;
+            &.active {
+                border-bottom: 2px solid $active;
+                font-weight: $bold;
+            }
+        }
+    }
+}

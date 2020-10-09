@@ -1,0 +1,21 @@
+.table{
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    .song-image{
+        border-radius: 4px;
+        height: $spacer*2;
+        width: $spacer*2;
+    }
+    .duration-cell{
+        text-align: right;
+    }
+    .table-body{
+        tr{
+            transition: all ease-in-out 75ms;
+            &:hover{
+                background: $lightGrey;
+            }
+            
+        }
+    }
+}
