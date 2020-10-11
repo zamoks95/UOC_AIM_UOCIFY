@@ -41,9 +41,9 @@ const renderItems = (target, action, qty) => {
       let newItem = "<!-- Media Item - Start -->";
       // Add media-item (artist or album)
       if (action === "artists") {
-        newItem += '<div class="media-item media-item__artist">';
+        newItem += '<figure class="media-item media-item__artist">';
       } else {
-        newItem += '<div class="media-item">';
+        newItem += '<figure class="media-item">';
       }
       // Open item__media
       newItem += '<div class="item__media">';
@@ -58,21 +58,21 @@ const renderItems = (target, action, qty) => {
       // Close item__media
       newItem += "</div>";
       // Open item-description
-      newItem += '<div class="item-description">';
+      newItem += '<figcaption class="item-description">';
       // item-description__header
       newItem +=
-        '<div class="item-description__header">' +
+        '<label class="item-description__header">' +
         formatToPascalCase(item.name) +
-        "</div>";
+        "</label>";
       // item-description__text
       newItem +=
-        '<div class="item-description__text">' +
+        '<p class="item-description__text">' +
         getRandomFans() +
-        " fans</div>";
+        " fans</p>";
       // Close item-description
-      newItem += "</div>";
+      newItem += "</figcaption>";
       // Close media-item
-      newItem += "</div>";
+      newItem += "</figure>";
       // Add Ending Comment
       newItem += "<!-- Media Item - End -->";
       // Append new item into target
